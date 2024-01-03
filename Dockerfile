@@ -13,5 +13,5 @@ RUN npm run build
 
 #Run phase
 FROM nginx:latest
-
+EXPOSE 80
 COPY --from=builder /home/node/app/build /usr/share/nginx/html
